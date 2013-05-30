@@ -12,13 +12,13 @@ class BusBase():
             print(msg)
 
 
+class PacketType():
+    EMPTY, TEST, SETMOTOR, PROCESSPICTURE, STARTSCAN, CALIBRATE, DONEPICTURE, DONESCAN = range(8)
+
+
 class Packet():
     def __init__(self, action=PacketType.EMPTY, data=None):
         if data is None:
             data = []
         self.action = action
         self.data = data
-
-
-class PacketType():
-    EMPTY, TEST, SETMOTOR, PROCESSPICTURE, STARTSCAN, CALIBRATE, DONEPICTURE, DONESCAN = range(8)
