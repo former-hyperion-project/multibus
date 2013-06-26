@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='MultiBus',
-    version='0.1.4',
+    version='0.1.5',
     packages=['multibus'],
     url='https://github.com/Hyperion-project/multibus',
     license='lgpl v3',
